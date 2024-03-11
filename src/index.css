@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity:0.8;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:1000;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  width: 50vh;
+  outline: 1px solid black;
+  margin: 0rem 2rem 2rem 2rem;
+  background-color:#ccc;
+  border-radius: .3125rem;
+  padding: 1.875rem;
+}
+
+.form-title{
+  background-color: rgb(32, 160, 172);
+  color: white;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.form-control{
+  outline : .0938rem solid;
+  width: 90%;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding: .5rem;
+  border: none;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.form-control:focus{
+  outline: 0.125rem solid #14c27a;
+}
+
+.control-group{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.25rem;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: -1.8ex;
+  z-index: 1;
+  left: 2em;
+  padding: 0 5px;
+  background-color:#ccc;
+}
+
+input{
+  border: 1px solid gray;
+  border-radius: 6px;
+  position: relative;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper{
+  margin: 1.25rem 0 0 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 1rem;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.login-button:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
