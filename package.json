@@ -1,8 +1,7 @@
 {
-  "name": "my-app",
-
-  "version": "0.1.0",
   "homepage": "https://DevAmit007.github.io/My-App",
+  "name": "my-app",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,7 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "git-pages": "^0.8.1"
   }
 }
